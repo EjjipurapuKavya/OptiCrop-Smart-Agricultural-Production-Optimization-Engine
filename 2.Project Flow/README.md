@@ -1,2 +1,7 @@
+# Project Flow
 
-This folder contains the workflow of the OptiCrop Smart Agricultural Production Optimization Engine project.
+1. Collect Soil Data
+2. Preprocess Dataset
+3. Train Machine Learning Model
+4. Predict Suitable Crop
+5. Display Recommended Crop
