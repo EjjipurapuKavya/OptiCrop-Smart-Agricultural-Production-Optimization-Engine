@@ -1,8 +1,9 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OptiCrop</title>
 
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
@@ -18,25 +19,25 @@
 
     <form action="/predict" method="POST">
 
-        <label>Nitrogen</label>
+        <label>Nitrogen (N)</label>
         <input type="number" name="N" required>
 
-        <label>Phosphorus</label>
+        <label>Phosphorus (P)</label>
         <input type="number" name="P" required>
 
-        <label>Potassium</label>
+        <label>Potassium (K)</label>
         <input type="number" name="K" required>
 
-        <label>Temperature</label>
+        <label>Temperature (°C)</label>
         <input type="number" step="any" name="temperature" required>
 
-        <label>Humidity</label>
+        <label>Humidity (%)</label>
         <input type="number" step="any" name="humidity" required>
 
         <label>pH</label>
         <input type="number" step="any" name="ph" required>
 
-        <label>Rainfall</label>
+        <label>Rainfall (mm)</label>
         <input type="number" step="any" name="rainfall" required>
 
         <button type="submit">🌱 Predict Crop</button>
@@ -46,5 +47,4 @@
 </div>
 
 </body>
-
 </html>
