@@ -1,38 +1,50 @@
+
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>OptiCrop</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
+
 <body>
 
-<h1>🌾 OptiCrop - Crop Recommendation System</h1>
+<div class="container">
 
-<form action="/predict" method="POST">
+    <h1>🌾 OptiCrop</h1>
 
-<label>Nitrogen:</label><br>
-<input type="number" name="N" required><br><br>
+    <p>Smart Agricultural Production Optimization Engine</p>
 
-<label>Phosphorus:</label><br>
-<input type="number" name="P" required><br><br>
+    <form action="/predict" method="POST">
 
-<label>Potassium:</label><br>
-<input type="number" name="K" required><br><br>
+        <label>Nitrogen</label>
+        <input type="number" name="N" required>
 
-<label>Temperature:</label><br>
-<input type="number" step="any" name="temperature" required><br><br>
+        <label>Phosphorus</label>
+        <input type="number" name="P" required>
 
-<label>Humidity:</label><br>
-<input type="number" step="any" name="humidity" required><br><br>
+        <label>Potassium</label>
+        <input type="number" name="K" required>
 
-<label>pH:</label><br>
-<input type="number" step="any" name="ph" required><br><br>
+        <label>Temperature</label>
+        <input type="number" step="any" name="temperature" required>
 
-<label>Rainfall:</label><br>
-<input type="number" step="any" name="rainfall" required><br><br>
+        <label>Humidity</label>
+        <input type="number" step="any" name="humidity" required>
 
-<input type="submit" value="Predict Crop">
+        <label>pH</label>
+        <input type="number" step="any" name="ph" required>
 
-</form>
+        <label>Rainfall</label>
+        <input type="number" step="any" name="rainfall" required>
+
+        <button type="submit">🌱 Predict Crop</button>
+
+    </form>
+
+</div>
 
 </body>
+
 </html>
